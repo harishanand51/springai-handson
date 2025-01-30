@@ -13,4 +13,4 @@ sfg:
   aiapp:
     vectorStorePath: /tmp/vectorstore.json
     documentsToLoad:
-    - classpath:/movies500Trimmed.csv
+      - "classpath:/movies500Trimmed.csv"

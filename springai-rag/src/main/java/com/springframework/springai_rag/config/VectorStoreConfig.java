@@ -32,7 +32,8 @@ public class VectorStoreConfig {
 			//log.debug("Loading documents into vector store");
 			vectorStoreProperties.getDocumentsToLoad().forEach( document -> {
 				//log.debug("Loading document: "+ document.getFileName());
-				TikaDocumentReader documentReader = new TikaDocumentReader(document);
+				Resource resource = (Resource)document;
+				TikaDocumentReader documentReader = new TikaDocumentReader(resource);
 
 				List<Document> docs = documentReader.get();
 				

@@ -26,7 +26,7 @@ public class OpenAIServiceImpl implements OpenAIService {
 	private final ChatModel chatModel=null;
 	private SimpleVectorStore vectorStore;
 	
-	@Value("classpath:/templates/rag-prompt-template.st")
+	@Value("classpath:/templates/rag-prompt-template-meta.st")
 	private Resource ragPromptTemplate;
 
 	@Override
@@ -36,8 +36,9 @@ public class OpenAIServiceImpl implements OpenAIService {
 		List<String> contentList = documents.stream().map(Document::getContent).toList();
 		
 		
-		PromptTemplate promptTemplate = new PromptTemplate(question.question());
-		Prompt prompt = promptTemplate.create(Map.of("input",question.question(),"documents",String.join("\n", contentList)));
+		PromptTemplate promptTemplate = new PromptTemplate(ragPromptTemplate);
+		Prompt prompt = promptTemplate.create(Map.of("input",question.question(),"documents",
+				String.join("\n", contentList)));
 		
 		contentList.forEach(System.out::println);
 		
@@ -45,5 +46,7 @@ public class OpenAIServiceImpl implements OpenAIService {
 		
 		return new Answer(chatResponse.getResult().getOutput().getContent());
 	}
+
+	
 
 }

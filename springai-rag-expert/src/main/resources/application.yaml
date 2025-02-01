@@ -1,6 +1,6 @@
 spring:
   application:
-    name: springai-rag
+    name: springai-rag-expert
     
   ai:
     openai:

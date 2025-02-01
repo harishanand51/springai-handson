@@ -8,8 +8,8 @@
 		<version>3.3.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.springframework.springai-rag</groupId>
-	<artifactId>springai-rag</artifactId>
+	<groupId>com.springframework.springai-rag-expert</groupId>
+	<artifactId>springai-rag-expert</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springai-rag</name>
 	<description>Spring AI using OpenAI</description>

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: springai-image
+    
+  ai:
+    openai:
+      api-key: #$USE YOUR OPENAI_API_KEY
+       
+     

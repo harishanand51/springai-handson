@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springai-functions
+    
+  ai:
+    openai:
+      api-key: $USE YOUR OPENAI_API_KEY
+      chat:
+        options:
+          model: gpt-4
+sfg:
+  aiapp:
+    apiNinjasKey: ${API_NINJAS_KEY}
+          

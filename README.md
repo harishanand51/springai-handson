@@ -45,16 +45,6 @@ This project covers **AI-driven Speech-to-Text and Text-to-Speech** functionalit
 
 ---
 
-### **Multi-Model AI Service**
-The **Multi-Model AI Service** allows dynamic switching between AI providers like **OpenAI, Hugging Face, and Amazon Bedrock**.
-
-#### **Key Features:**
-- Centralized **Spring Boot** microservice to interact with different AI models.
-- Supports **multiple AI integrations** for flexibility.
-- Provides a unified API layer for **multi-provider AI access**.
-
----
-
 ## 🛠 **Configuration Files**
 - **`application.properties`** – Stores API keys and configurations for AI providers.
 - **`.gitignore`** – Specifies files and directories to exclude from version control.
@@ -70,7 +60,6 @@ This repository incorporates a variety of **AI and backend technologies**, inclu
 | **Spring Boot** | Framework for building scalable AI microservices |
 | **Spring AI** | AI integration framework supporting multiple models |
 | **OpenAI API** | Provides AI-powered chatbot, image, and audio processing |
-| **Hugging Face Models** | AI models for NLP and deep learning applications |
 | **RAG Pipelines** | Enhancing AI responses with **retrieval-augmented generation** |
 | **Vector Databases** | Stores embeddings for **intelligent AI queries** |
 | **REST API Design** | Enables communication between AI models and client applications |

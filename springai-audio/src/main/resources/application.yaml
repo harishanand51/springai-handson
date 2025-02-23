@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: springai-audio
+    
+  ai:
+    openai:
+      api-key:  $USE YOUR OPENAI_API_KEY
+       
+     
